@@ -1,0 +1,89 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fff8fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container{
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 10px;
+  background-color: #bbada0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.grid-cell {
+  width: 100px;
+  height: 100px;
+  background-color: #cdc1b4;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #776e65;
+}
+
+.grid-cell.tile-empty {
+  background-color: #cdc1b4;
+  color: #776e65;
+}
+
+.grid-cell.tile-2 {
+  background-color: #d0e7ff; /* azul suave para 2 */
+  color: #1a3550;
+}
+.grid-cell.tile-4 {
+  background-color: #b8dbff;
+  color: #0f2740;
+}
+.grid-cell.tile-8 {
+  background-color: #9fcfff;
+  color: #042033;
+}
+.grid-cell.tile-16 {
+  background-color: #86c3ff;
+  color: #001b2a;
+}
+.grid-cell.tile-32 {
+  background-color: #6bb7ff;
+  color: #00151f;
+}
+.grid-cell.tile-64 {
+  background-color: #51abff;
+  color: #ffffff;
+}
+.grid-cell.tile-128 {
+  background-color: #3a9dff;
+  color: #ffffff;
+}
+.grid-cell.tile-256 {
+  background-color: #248fff;
+  color: #ffffff;
+}
+.grid-cell.tile-512 {
+  background-color: #007fff;
+  color: #ffffff;
+}
+.grid-cell.tile-1024 {
+  background-color: #0066cc;
+  color: #ffffff;
+}
+.grid-cell.tile-2048 {
+  background-color: #4499ff; /* azul más claro/ brillante para 2048 */
+  color: #ffffff;
+}
+
+.score-container {
+  margin-bottom: 20px;
+}
